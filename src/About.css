@@ -1,0 +1,28 @@
+.about-section{
+    padding: 2rem;
+    background-color: #cff0ea;
+    color: black;
+}
+
+.about-section h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-content{
+    display: flex;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content div h3{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-content div p{
+    font-size: 1rem;
+    line-height: 1.6;
+}

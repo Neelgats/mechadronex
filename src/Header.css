@@ -1,0 +1,38 @@
+.header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #dbc923;
+    color: black;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo h1{
+    display: inline;
+    font-size: 1.5rem;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin-left: 20px;
+}
+
+nav ul li a{
+    color: #3805ee;
+    text-decoration: none;
+    
+}
+
+nav ul li a:hover,a:focus{
+    text-decoration: overline;
+}
