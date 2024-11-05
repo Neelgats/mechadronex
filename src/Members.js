@@ -1,10 +1,11 @@
 import React from "react";
 import './Members.css';
+import logo from './logo.svg';
 
 const membersData=[
-    {name:'Jaswant Reddy',role:'President',img:'logo.svg'},
-    {name:'Hariprasad',role:'Secretary',img:'logo.svg'},
-    {name:'Balaji',role:'Treasurer',img:'logo.svg'},
+    {name:'Jaswant Reddy',role:'President',img:logo,bio:"axibeu  uibfihb ibf ifbihbibubu b"},
+    {name:'Hariprasad',role:'Secretary',img:logo,bio:"jhvuygijhwgjeetdidyhv  yugyg ygey8e y8f y8fey8e"},
+    {name:'Balaji',role:'Treasurer',img:logo,bio:"uhvy8y8guihhgbdhgigwg"},
 ];
 
 const Members=()=>{
@@ -14,14 +15,17 @@ const Members=()=>{
         <div className="members-grid">
             {membersData.map((member,index)=>(
                 <div key={index} className="member-card">
-                    <img src={member.img} alt={`${member.name}`}></img>
-                    <h3>{member.name}</h3>
-                    <p>{member.role}</p>
+                    <img src={member.img} alt={member.name} className="member-image"></img>
+                    <h3 className="member-name">{member.name}</h3>
+                    <div className="member-details">
+                        <p>{member.role}</p>
+                        <p>{member.bio}</p>
+                    </div> 
                 </div>
             ))}
         </div>
     </section>
     );
-}
+};
 
 export default Members;

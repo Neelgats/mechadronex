@@ -12,11 +12,12 @@
 }
 
 .members-grid{
-    align-content: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1.5rem;
-    min-width: 800px;
+    min-width: 1000px;
+    min-height: 200px;
     margin: 0 auto;
     
 }
@@ -28,7 +29,14 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
 
+.member-card:hover{
+    transform: scale(1.05);
 }
 
 .member-card img{
@@ -45,5 +53,25 @@
 
 .member-card p{
     font-size: 1rem;
-    color: #666;
+    color: #000000;
 }
+
+.member-details {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(39, 257, 217, 1.2);
+    color: #000000;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .member-card:hover .member-details {
+    opacity: 1;
+    transform: translateY(0);
+  }
