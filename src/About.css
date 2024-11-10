@@ -1,5 +1,5 @@
 .about-section{
-    padding: 2rem;
+    padding: 6rem;
     background-color: #cff0ea;
     color: black;
 }
@@ -8,13 +8,16 @@
     text-align: center;
     font-size: 2rem;
     margin-bottom: 1.5rem;
+    justify-content: center;
 }
 
-.about-content{
-    display: flex;
-    gap: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
+.who,.what{
+    align-content: center;
+    text-align: center;
+}
+.who a{
+    max-width: 70%;
+    
 }
 
 .about-content div h3{
