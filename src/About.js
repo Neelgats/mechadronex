@@ -1,5 +1,6 @@
 import React from "react";
 import './About.css';
+import bg from './inaugural_photo.jpg';
 
 const About=()=>{
     return(
@@ -8,29 +9,31 @@ const About=()=>{
                 <div className="about-content">
                     <div className="who">
                         <h3>Who we are</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit, sed do eiusmod tempor 
-                            incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud exercitation
-                             ullamco laboris nisi ut aliquip ex ea commodo 
-                             consequat. Duis aute irure dolor in reprehenderit 
-                             in voluptate velit esse cillum dolore eu fugiat 
-                             nulla pariatur. Excepteur sint occaecat cupidatat 
-                             non proident, sunt in culpa qui officia deserunt 
-                             mollit anim id est laborum.</p>
+                        <p>We are a passionate team of students, innovators, and tech enthusiasts
+                             united by a shared love for drones. At <strong><em>MechaDroneX</em></strong>, we explore the 
+                             limitless possibilities of drone technology, constantly learning, 
+                             experimenting, and pushing the envelope. Our members come from diverse 
+                             backgrounds but share a common goal: to leverage drones for real-world 
+                             solutions, make technology more accessible, and inspire others to join 
+                             us on this exciting journey..</p>
                     </div>
+
+                   <section className="image-card">
+                    <div className="image-container">
+                        <img src={bg} alt="Landscape" className="landscape-image" />
+                        <div className="glass-effect"></div>
+                    </div>
+                    </section>
+
                     <div className="what">
                         <h3>What we do</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                             elit, sed do eiusmod tempor incididunt ut labore 
-                             et dolore magna aliqua. Ut enim ad minim veniam, 
-                             quis nostrud exercitation ullamco laboris nisi ut
-                              aliquip ex ea commodo consequat. Duis aute irure 
-                              dolor in reprehenderit in voluptate velit esse 
-                              cillum dolore eu fugiat nulla pariatur. 
-                              Excepteur sint occaecat cupidatat non proident,
-                               sunt in culpa qui officia deserunt mollit 
-                               anim id est laborum.</p>
+                        <p>At MechaDroneX, our mission is to inspire and empower 
+                            the next generation of drone enthusiasts. We are dedicated 
+                            to providing hands-on learning experiences, fostering creativity,
+                             and encouraging innovation in drone technology. By building a 
+                             strong, collaborative community, we aim to push the boundaries 
+                             of what drones can achieve, shaping a future where they play a 
+                             vital role in technology, exploration, and problem-solving.</p>
                     </div>
                 </div>
         </section>
